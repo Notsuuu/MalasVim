@@ -1,6 +1,6 @@
 # 🦥 MalasVim v1.0
 
-A blazing-fast, lightweight, and modern Neovim IDE configuration tailored for Full-Stack Web Developers, Python enthusiasts, and IoT hackers. Built entirely on top of **Lazy.nvim** and written 100% in Lua.
+Lightweight NVIM Configuration Untuk Kamu-Kamu Yang Pemalas Seperti Aing
 
 ```text
                 ███╗   ███╗ █████╗ ██╗      █████╗ ███████╗██╗   ██╗██╗███╗   ███╗
