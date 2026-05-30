@@ -72,19 +72,13 @@ require("lazy").setup({
 		end,
 	},
 
-	-- 🐙 3. GIT COMMAND CENTER: Neogit & Gitsigns
+	-- 🐙 3. GIT COMMAND CENTER: LazyGIT
 	{
-		"NeogitOrg/neogit",
+		"kdheepak/lazygit.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
 		config = function()
-			require("neogit").setup()
-			vim.keymap.set("n", "<leader>gs", ":Neogit<CR>", { desc = "Buka Neogit" })
-		end,
-	},
-	{
-		"lewis6991/gitsigns.nvim",
-		config = function()
-			require("gitsigns").setup()
+			require("lazygit").setup()
+			vim.keymap.set("n", "<leader>g", ":LazyGit<CR>", { desc = "Buka LazyGit" })
 		end,
 	},
 
@@ -315,7 +309,7 @@ require("lazy").setup({
 			dashboard.section.buttons.val = {
 				dashboard.button("f", "󰈞  Cari File", ":Telescope find_files <CR>"),
 				dashboard.button("e", "  File Baru", ":ene <BAR> startinsert <CR>"),
-				dashboard.button("g", "󰊢  Git Status", ":Neogit<CR>"),
+				dashboard.button("g", "󰊢  Git Status", ":LazyGit<CR>"),
 				dashboard.button("q", "󰅙  Keluar", ":qa<CR>"),
 			}
 			local function footer()
