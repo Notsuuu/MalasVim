@@ -120,6 +120,6 @@ Gunakan *memori otot* jarimu untuk menguasai shortcut esensial ini (Tombol `<lea
 ---
 
 ## 📜 Lisensi
-Dikembangkan secara lokal dengan penuh rasa malas oleh **Muhammad Ali Mubaraq (Notsuuu)**. Bebas digunakan, dimodifikasi, dan disebarluaskan oleh sesama kaum pencinta terminal cepat. 
+Dikembangkan secara lokal dengan penuh rasa malas oleh **Saya, Muhammad Ali Mubaraq (Notsuuu)**. Bebas digunakan, dimodifikasi, dan disebarluaskan oleh sesama kaum pencinta terminal cepat. 
 
-*Gas terus kawan!* 🚀🔥
+*Tetap Ngoding Walau MALAZZZZZ* 🚀🔥
