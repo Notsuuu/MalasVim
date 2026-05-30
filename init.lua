@@ -72,14 +72,16 @@ require("lazy").setup({
 		end,
 	},
 
-	-- 🐙 3. GIT COMMAND CENTER: LazyGIT
+	-- 🐙 3. GIT COMMAND CENTER: LazyGit
+
 	{
 		"kdheepak/lazygit.nvim",
-		dependencies = { "nvim-lua/plenary.nvim" },
-		config = function()
-			require("lazygit").setup()
-			vim.keymap.set("n", "<leader>g", ":LazyGit<CR>", { desc = "Buka LazyGit" })
-		end,
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
+		keys = {
+			{ "<leader>gg", "<cmd>LazyGit<cr>", desc = "Buka Lazygit" },
+		},
 	},
 
 	-- 🤖 4. AI ASSISTANT: GitHub Copilot
