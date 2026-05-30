@@ -1,4 +1,4 @@
-# 🦥 MalasVim v1.0
+# 🦥 MalasVim v1.1
 
 Lightweight NVIM Configuration Untuk Kamu-Kamu Yang Pemalas Seperti Aing
 
