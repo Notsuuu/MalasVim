@@ -113,7 +113,7 @@ Gunakan *memori otot* jarimu untuk menguasai shortcut esensial ini (Tombol `<lea
 * `Spasi` + `rn` : Mengubah nama variabel secara massal di seluruh file (*Smart Rename*).
 
 ### 🐙 Manajemen Git & API Testing
-* `Spasi` + `gs` : Buka Git Control Center (`LazyGit`) untuk commit/push TUI visual.
+* `Spasi` + `gg` : Buka Git Control Center (`LazyGit`) untuk commit/push TUI visual.
 * `Spasi` + `R` : Jalankan eksekusi HTTP Request pada file `.http` aktif (`Kulala`).
 * `Spasi` + `T` : Berganti tampilan antara Headers dan Body pada hasil response API (`Kulala`).
 
