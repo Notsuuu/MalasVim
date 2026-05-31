@@ -79,6 +79,7 @@ require("lazy").setup({
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 		},
+		cmd = { "LazyGit" },
 		keys = {
 			{ "<leader>gg", "<cmd>LazyGit<cr>", desc = "Buka Lazygit" },
 		},
