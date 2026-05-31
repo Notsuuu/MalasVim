@@ -1,4 +1,4 @@
-# 🦥 MalasVim v1.2
+# 🦥 MalasVim v1.3
 Lightweight NVIM Configuration Untuk Kamu-Kamu Yang Pemalas Seperti Aing
 
 ```text
@@ -9,7 +9,8 @@ Lightweight NVIM Configuration Untuk Kamu-Kamu Yang Pemalas Seperti Aing
                 ██║ ╚═╝ ██║██║  ██║███████╗██║  ██║███████║ ╚████╔╝ ██║██║ ╚═╝ ██║
                 ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝  ╚═══╝  ╚═╝╚═╝     ╚═╝
 ```
-* **Big Updates!!** 1 file configs ke modular configs!, kamu bisa mengubah config dari keymaps, plugin, dan sebagai nya di folder dan file terpisah yang lebih mudah untuk dicari
+* **Big Updates!!** (1.2) 1 file configs ke modular configs!, kamu bisa mengubah config dari keymaps, plugin, dan sebagai nya di folder dan file terpisah yang lebih mudah untuk dicari
+* **Big Updates!!** (1.3) AI Companion + Agent is Here!!!.... coba kamu tes dengan cara ":CodeCompanionChat" di MalasVim kalian!
 ---
 
 ## 🚀 Fitur Unggulan
