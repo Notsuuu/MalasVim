@@ -1,5 +1,4 @@
-# 🦥 MalasVim v1.1
-
+# 🦥 MalasVim v1.2
 Lightweight NVIM Configuration Untuk Kamu-Kamu Yang Pemalas Seperti Aing
 
 ```text
@@ -10,7 +9,7 @@ Lightweight NVIM Configuration Untuk Kamu-Kamu Yang Pemalas Seperti Aing
                 ██║ ╚═╝ ██║██║  ██║███████╗██║  ██║███████║ ╚████╔╝ ██║██║ ╚═╝ ██║
                 ╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝  ╚═══╝  ╚═╝╚═╝     ╚═╝
 ```
-
+* **Big Updates!!** 1 file configs ke modular configs!, kamu bisa mengubah config dari keymaps, plugin, dan sebagai nya di folder dan file terpisah yang lebih mudah untuk dicari
 ---
 
 ## 🚀 Fitur Unggulan
