@@ -7,6 +7,7 @@ return {
   },
   config = function()
     require("codecompanion").setup({
+      system_prompt = "Kamu adalah asisten AI ahli programming untuk Neovim. Kamu HARUS SELALU berkomunikasi, menjelaskan kode, dan menjawab pertanyaan menggunakan Bahasa Indonesia yang baik, santai, dan mudah dipahami. Jangan pernah menggunakan bahasa Inggris untuk merespons percakapan.",
       adapters = {
         gemini = function()
           return require("codecompanion.adapters").extend("gemini", {
