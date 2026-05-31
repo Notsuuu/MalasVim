@@ -408,6 +408,25 @@ require("lazy").setup({
 			},
 		},
 	},
+	-- 🔑 20. BUKU PANDUAN SHORTCUT (Which-Key)
+	{
+		"folke/which-key.nvim",
+		event = "VeryLazy",
+		init = function()
+			vim.o.timeout = true
+			vim.o.timeoutlen = 300
+		end,
+		opts = {
+			spec = {
+				{ "<leader>f", group = "🔭 Pencarian (Telescope/Flash)" },
+				{ "<leader>g", group = "🐙 Git (Lazygit)" },
+				{ "<leader>c", group = "🧠 Code Action (LSP)" },
+				{ "<leader>r", group = "⚡ Rename & Run (Kulala)" },
+			},
+		},
+	},
 }, {
-	rocks = { enabled = false },
+	rocks = {
+		enabled = false,
+	},
 })
