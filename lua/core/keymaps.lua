@@ -16,3 +16,9 @@ map("v", ">", ">gv")
 
 -- Menghilangkan highlight kuning setelah selesai mencari kata pakai '/' (biar mata tidak sakit)
 map("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "Clear Search Highlight" })
+
+-- Lompat antar jendela secepat kilat (Explorer <-> File)
+map("n", "<C-h>", "<C-w>h", { desc = "Go to Left Window (NvimTree)" })
+map("n", "<C-j>", "<C-w>j", { desc = "Go to Lower Window" })
+map("n", "<C-k>", "<C-w>k", { desc = "Go to Upper Window" })
+map("n", "<C-l>", "<C-w>l", { desc = "Go to Right Window (File)" })
