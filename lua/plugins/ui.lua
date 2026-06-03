@@ -52,6 +52,7 @@ return {
               dashboard.button("f", "󰈞  Cari File", ":Telescope find_files <CR>"),
               dashboard.button("e", "  File Baru", ":ene <BAR> startinsert <CR>"),
               dashboard.button("g", "󰊢  Git Status", ":LazyGit<CR>"),
+              dashboard.button("l", "󰒲  Lazy", ":Lazy<CR>"),
               dashboard.button("q", "󰅙  Keluar", ":qa<CR>"),
           }
           local function footer()
