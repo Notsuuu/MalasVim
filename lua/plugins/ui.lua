@@ -1,13 +1,18 @@
--- ~/.config/nvim/lua/plugins/ui.lua
-
 return {
-
 	-- 1. TEMA TOKYONIGHT
 	{
 		"folke/tokyonight.nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
+        require("tokyonight").setup({
+          transparent = true,
+          styles = {
+            sidebars = "transparent",
+            floats = "transparent",
+          },
+        })
+
 			vim.cmd([[colorscheme tokyonight-night]])
 		end,
 	},
@@ -15,18 +20,62 @@ return {
 	-- 2. IKON
 	{ "nvim-tree/nvim-web-devicons", lazy = true },
 
-	-- 3. STATUS BAR BAWAH (Lualine)
-	{
-		"nvim-lualine/lualine.nvim",
-		dependencies = { "nvim-tree/nvim-web-devicons" },
-		config = function()
-			require("lualine").setup({
-				options = {
-					theme = "tokyonight",
-				},
-			})
-		end,
-	},
+-- 3. STATUS BAR BAWAH (Lualine)
+    {
+        "nvim-lualine/lualine.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        config = function()
+            vim.opt.laststatus = 3
+
+            -- Menghancurkan dinding hitam bawaan Neovim
+            vim.api.nvim_set_hl(0, "StatusLine", { bg = "NONE" })
+            vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "NONE" })
+
+            local function save_status()
+                if vim.bo.buftype ~= "" then return "" end 
+                if vim.bo.readonly then return "🔒 Readonly" end
+                if vim.bo.modified then return "⚠️ Belum di-save" end
+                return "💾 Sudah di-save"
+            end
+
+            local custom_theme = require("lualine.themes.tokyonight")
+            for _, mode in pairs(custom_theme) do 
+                if mode.c then mode.c.bg = "NONE" end
+                if mode.x then mode.x.bg = "NONE" end
+            end
+
+            require("lualine").setup({
+                options = {
+                    theme = custom_theme, 
+                    globalstatus = true,
+                    component_separators = { left = '', right = ''},
+                    section_separators = { left = '', right = ''},
+                },
+                sections = {
+                    lualine_a = { 'mode' },
+                    lualine_b = { 'branch', 'diff', 'diagnostics' },
+                    lualine_c = { 
+                        'filename',
+                        save_status,
+                        { function() return " " end, padding = { left = 1, right = 0 } }
+                    },
+                    lualine_x = { 
+                        { function() return " " end, padding = { left = 0, right = 1 } },
+                        function() return "󰣇 Arch" end,
+                        'filetype',
+                        'location'
+                    },
+                    lualine_y = { 
+                        function() return os.date('%d/%m/%y') end 
+                    },
+                    lualine_z = { 
+                        function() return os.date('%H:%M') end 
+                    }
+                },
+            })
+        end
+    },
+
 -- 🪞 4. DASHBOARD PERSONAL (Alpha-nvim)
   {
       "goolord/alpha-nvim",
