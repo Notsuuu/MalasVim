@@ -4,8 +4,8 @@ return {
     opts = {
         editor = {
             client = "1514377335535566998", 
-            tooltip = "Distro Buatan Sendiri 🚀", 
-            icon = "neovim_logo",
+            tooltip = "Arch Linux + Hyprland BTW 🐧", 
+            icon = "arch_logo",
         },
         display = {
             theme = "catppuccin", 
@@ -21,7 +21,7 @@ return {
         text = {
             dashboard = "Welcome Back, Notsuuu 👋",
             workspace = function(opts) 
-                return "Di Direktori " .. (opts.workspace or "Lokal") .. " 🚀" 
+                return "Di Direktori " .. (opts.workspace or "Lokal") .. " 🚀 • Arch + Hyprland BTW" 
             end,
             viewing = function(opts) 
                 return "Melihat " .. (opts.filename or "file") .. " 🧐" 
