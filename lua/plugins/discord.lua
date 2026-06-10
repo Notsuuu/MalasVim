@@ -35,6 +35,12 @@ return {
             plugin = function(opts) 
                 return "Ngoprek Plugin " .. (opts.name or "Plugin") .. " ⚙️" 
             end,
+            vcs = function(opts)
+                return "Mengamankan Kode di " .. (opts.name or "Git") .. " 🌿"
+            end,
+            terminal = function(opts)
+                return "Ngetik Command di " .. (opts.name or "Terminal") .. " 📟"
+            end,
         },
     },
 }
