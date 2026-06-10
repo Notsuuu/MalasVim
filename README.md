@@ -12,6 +12,7 @@ Lightweight NVIM Configuration Untuk Kamu-Kamu Yang Pemalas Seperti Aing
 * **Big Updates!!** (1.2) 1 file configs ke modular configs!, kamu bisa mengubah config dari keymaps, plugin, dan sebagai nya di folder dan file terpisah yang lebih mudah untuk dicari
 * **Big Updates!!** (1.3) AI Companion + Agent is Here!!!.... coba kamu tes dengan cara ":CodeCompanionChat" di MalasVim kalian!
 * **Quick Updates!!** (1.3.1) Beberapa bug fixes dan optimasi performa, serta penambahan plugin baru, Noice (floating nvim cmdline) untuk pengalaman pengguna yang lebih baik.
+* **Quick Updates!!** (1.3.2) Penambahan plugin baru, Cord (cord.nvim) untuk integrasi dengan Activity Notificator di Discord, serta beberapa perbaikan bug kecil.
 ---
 
 ## 🚀 Fitur Unggulan
