@@ -5,7 +5,7 @@ return {
         editor = {
             client = "1514377335535566998", 
             tooltip = "Distro Buatan Sendiri 🚀", 
-            icon = "https://raw.githubusercontent.com/neovim/neovim.github.io/master/logos/neovim-mark.svg",
+            icon = "neovim_logo",
         },
         display = {
             theme = "catppuccin", 
@@ -19,14 +19,21 @@ return {
             details = "Lagi AFK di MalasVIM... 💤", 
         },
         text = {
+            dashboard = "Welcome Back, Notsuuu 👋",
             workspace = function(opts) 
-                return "Di proyek " .. (opts.workspace or "Lokal") .. " 🚀" 
+                return "Di Direktori " .. (opts.workspace or "Lokal") .. " 🚀" 
             end,
             viewing = function(opts) 
                 return "Melihat " .. (opts.filename or "file") .. " 🧐" 
             end,
             editing = function(opts) 
-                return "Mengedit " .. (opts.filename or "file") .. " 💻" 
+                return "Sedang Ngoding di File " .. (opts.filename or "file") .. " 💻" 
+            end,
+            file_browser = function(opts) 
+                return "Mencari File di " .. (opts.name or "Explorer") .. " 📁" 
+            end,
+            plugin = function(opts) 
+                return "Ngoprek Plugin " .. (opts.name or "Plugin") .. " ⚙️" 
             end,
         },
     },
